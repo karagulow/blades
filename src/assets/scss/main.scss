@@ -1,0 +1,17 @@
+@import './reset';
+
+html {
+  background-color: rgba(8, 1, 52, 1);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1560px;
+  padding: 0 20px;
+}

@@ -1,0 +1,71 @@
+@import '../../assets/scss/main.scss';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+
+  &Left {
+    display: flex;
+    flex-direction: row;
+    column-gap: 175px;
+    align-items: center;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  &Right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+
+    &__select {
+      display: flex;
+      flex-direction: row;
+      column-gap: 5px;
+      align-items: center;
+      cursor: pointer;
+
+      &Text {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+
+    &__auth {
+      display: flex;
+      padding: 10px 20px;
+      border-radius: 2px;
+      border: 1px solid var(--Green, #01c5ba);
+
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &__user {
+      display: flex;
+      flex-direction: row;
+      column-gap: 18px;
+      align-items: center;
+
+      &Link {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

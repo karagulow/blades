@@ -1,0 +1,27 @@
+@import '../../assets/scss/main.scss';
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgba(1, 197, 186, 1);
+  border-radius: 2px;
+  padding: 14px 20px;
+  cursor: text;
+
+  &Input {
+    width: 578px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+
+    &::placeholder {
+      color: #9c99ae;
+    }
+  }
+
+  &Icon {
+    display: flex;
+    justify-content: center;
+  }
+}
