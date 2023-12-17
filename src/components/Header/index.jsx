@@ -5,10 +5,15 @@ import styles from './Header.module.scss';
 
 import { Search } from '../Search';
 import { Menu } from '../Menu';
+import { Login } from '../Login';
+import { Register } from '../Register';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isAuth, setIsAuth] = useState(true);
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [registerOpen, setRegisterOpen] = useState(false);
+
+  const [isAuth, setIsAuth] = useState(false);
 
   return (
     <>
@@ -205,13 +210,24 @@ export const Header = () => {
                   </Link>
                 </div>
               ) : (
-                <button className={styles.headerRight__auth}>Войти</button>
+                <button
+                  className={styles.headerRight__auth}
+                  onClick={() => {
+                    setLoginOpen(true);
+                  }}
+                >
+                  Войти
+                </button>
               )}
             </div>
           </header>
         </div>
       </div>
       {menuOpen && <Menu />}
+      {loginOpen && (
+        <Login setLoginOpen={setLoginOpen} setRegisterOpen={setRegisterOpen} />
+      )}
+      {registerOpen && <Register setRegisterOpen={setRegisterOpen} />}
     </>
   );
 };
