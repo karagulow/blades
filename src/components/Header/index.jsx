@@ -7,11 +7,13 @@ import { Search } from '../Search';
 import { Menu } from '../Menu';
 import { Login } from '../Login';
 import { Register } from '../Register';
+import { PasswordRecovery } from '../PasswordRecovery';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
   const [registerOpen, setRegisterOpen] = useState(false);
+  const [recoveryOpen, setRecoveryOpen] = useState(false);
 
   const [isAuth, setIsAuth] = useState(false);
 
@@ -225,9 +227,14 @@ export const Header = () => {
       </div>
       {menuOpen && <Menu />}
       {loginOpen && (
-        <Login setLoginOpen={setLoginOpen} setRegisterOpen={setRegisterOpen} />
+        <Login
+          setLoginOpen={setLoginOpen}
+          setRegisterOpen={setRegisterOpen}
+          setRecoveryOpen={setRecoveryOpen}
+        />
       )}
       {registerOpen && <Register setRegisterOpen={setRegisterOpen} />}
+      {recoveryOpen && <PasswordRecovery setRecoveryOpen={setRecoveryOpen} />}
     </>
   );
 };

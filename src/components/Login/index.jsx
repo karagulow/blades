@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import styles from './Login.module.scss';
 
-export const Login = ({ setLoginOpen, setRegisterOpen }) => {
+export const Login = ({ setLoginOpen, setRegisterOpen, setRecoveryOpen }) => {
   const [authCategoryActive, setAuthCategoryActive] = useState(true);
   const [registerCategoryActive, setRegisterCategoryActive] = useState(false);
 
@@ -80,7 +80,15 @@ export const Login = ({ setLoginOpen, setRegisterOpen }) => {
             >
               <div className={styles.loginBlock__authItem__headline}>
                 <label for="password">Пароль</label>
-                <button type="button">Забыл пароль</button>
+                <button
+                  onClick={() => {
+                    setLoginOpen(false);
+                    setRecoveryOpen(true);
+                  }}
+                  type="button"
+                >
+                  Забыл пароль
+                </button>
               </div>
               <input type="password" id="password" placeholder="Пароль" />
             </div>
