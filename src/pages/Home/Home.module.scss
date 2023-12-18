@@ -1,0 +1,28 @@
+@import '../../assets/scss/main.scss';
+
+.home {
+  display: flex;
+  flex-direction: column;
+
+  &Title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 45px;
+  }
+
+  &Categories_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+
+  &Product_list {
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

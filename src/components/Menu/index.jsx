@@ -17,7 +17,7 @@ export const Menu = () => {
         </div>
         <ul className={styles.menuBlock__nav}>
           <li className={styles.menuBlock__navItem}>
-            <NavLink to="/" className={setActive}>
+            <NavLink to="/orders" className={setActive}>
               <svg
                 width="28"
                 height="28"
