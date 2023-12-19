@@ -2,9 +2,17 @@ import { useEffect, useRef, useState } from 'react';
 
 import styles from './Login.module.scss';
 
-export const Login = ({ setLoginOpen, setRegisterOpen, setRecoveryOpen }) => {
-  const [authCategoryActive, setAuthCategoryActive] = useState(true);
-  const [registerCategoryActive, setRegisterCategoryActive] = useState(false);
+export const Login = ({
+  setLoginOpen,
+  setIsAuth,
+  setRegisterOpen,
+  setRecoveryOpen,
+  authClick = true,
+  registerClick = false,
+}) => {
+  const [authCategoryActive, setAuthCategoryActive] = useState(authClick);
+  const [registerCategoryActive, setRegisterCategoryActive] =
+    useState(registerClick);
 
   // components
   const [authActive, setAuthActive] = useState(true);
@@ -96,6 +104,7 @@ export const Login = ({ setLoginOpen, setRegisterOpen, setRecoveryOpen }) => {
               className={styles.loginBlock__authBtn}
               onClick={() => {
                 setLoginOpen(false);
+                setIsAuth(true);
               }}
               type="button"
             >

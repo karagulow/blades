@@ -17,6 +17,9 @@ export const Header = () => {
 
   const [isAuth, setIsAuth] = useState(false);
 
+  const [authClick, setAuthClick] = useState(true);
+  const [registerClick, setRegisterClick] = useState(false);
+
   return (
     <>
       <div className={styles.fixedHeader}>
@@ -216,6 +219,7 @@ export const Header = () => {
                   className={styles.headerRight__auth}
                   onClick={() => {
                     setLoginOpen(true);
+                    setMenuOpen(false);
                   }}
                 >
                   Войти
@@ -225,12 +229,23 @@ export const Header = () => {
           </header>
         </div>
       </div>
-      {menuOpen && <Menu />}
+      {menuOpen && (
+        <Menu
+          isAuth={isAuth}
+          setMenuOpen={setMenuOpen}
+          setLoginOpen={setLoginOpen}
+          setAuthClick={setAuthClick}
+          setRegisterClick={setRegisterClick}
+        />
+      )}
       {loginOpen && (
         <Login
           setLoginOpen={setLoginOpen}
+          setIsAuth={setIsAuth}
           setRegisterOpen={setRegisterOpen}
           setRecoveryOpen={setRecoveryOpen}
+          authClick={authClick}
+          registerClick={registerClick}
         />
       )}
       {registerOpen && <Register setRegisterOpen={setRegisterOpen} />}
