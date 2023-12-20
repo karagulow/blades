@@ -26,7 +26,13 @@ export const Header = () => {
         <div className="container">
           <header className={styles.header}>
             <div className={styles.headerLeft}>
-              <Link className={styles.headerLeft__logo}>
+              <Link
+                to="/"
+                className={styles.headerLeft__logo}
+                onClick={() => {
+                  setMenuOpen(false);
+                }}
+              >
                 <svg
                   width="108"
                   height="30"
