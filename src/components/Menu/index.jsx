@@ -16,12 +16,12 @@ export const Menu = ({
     <div className={styles.menu}>
       {isAuth ? (
         <div className={styles.menuBlock}>
-          <div className={styles.menuBlock__user}>
+          <Link to="/lk" className={styles.menuBlock__user}>
             <p className={styles.menuBlock__userName}>
               Барилов Александр Сергеевич
             </p>
             <p className={styles.menuBlock__userEmail}>Kuropatka1233@mail.ru</p>
-          </div>
+          </Link>
           <ul className={styles.menuBlock__nav}>
             <li className={styles.menuBlock__navItem}>
               <NavLink

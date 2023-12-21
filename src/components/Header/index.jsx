@@ -197,7 +197,7 @@ export const Header = () => {
                       />
                     </svg>
                   </Link>
-                  <Link className={styles.headerRight__userLink}>
+                  <Link to="/lk" className={styles.headerRight__userLink}>
                     <svg
                       width="33"
                       height="34"

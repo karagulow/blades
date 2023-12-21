@@ -43,18 +43,18 @@ export const Home = () => {
       </ul>
       <h3 className={styles.homeTitle}>Каталог апробированных решений</h3>
       <ul className={styles.homeProduct_list}>
-        <ProductItem image={image1} price="2100" />
-        <ProductItem image={image2} price="2400" />
-        <ProductItem image={image3} price="1600" />
-        <ProductItem image={image4} price="1900" />
-        <ProductItem image={image5} price="1700" />
-        <ProductItem image={image2} price="1200" />
-        <ProductItem image={image2} price="1200" />
-        <ProductItem image={image5} price="3200" />
-        <ProductItem image={image6} price="1500" />
-        <ProductItem image={image3} price="1700" />
-        <ProductItem image={image4} price="1800" />
-        <ProductItem image={image3} price="1100" />
+        <ProductItem image={image1} price="2100" url="/products/id" />
+        <ProductItem image={image2} price="2400" url="/products/id" />
+        <ProductItem image={image3} price="1600" url="/products/id" />
+        <ProductItem image={image4} price="1900" url="/products/id" />
+        <ProductItem image={image5} price="1700" url="/products/id" />
+        <ProductItem image={image2} price="1200" url="/products/id" />
+        <ProductItem image={image2} price="1200" url="/products/id" />
+        <ProductItem image={image5} price="3200" url="/products/id" />
+        <ProductItem image={image6} price="1500" url="/products/id" />
+        <ProductItem image={image3} price="1700" url="/products/id" />
+        <ProductItem image={image4} price="1800" url="/products/id" />
+        <ProductItem image={image3} price="1100" url="/products/id" />
       </ul>
     </div>
   );
