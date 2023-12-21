@@ -1,0 +1,113 @@
+@import '../../assets/scss/main.scss';
+
+.slots {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &Back {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    cursor: pointer;
+
+    &__text {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  &Title {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 45px;
+  }
+
+  &Table {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    &__head {
+      &Item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        th {
+          color: #9c99ae;
+          font-size: 14px;
+          font-weight: 400;
+          text-align: left;
+        }
+
+        &__1 {
+          width: 250px;
+        }
+
+        &__2 {
+          width: 374px;
+        }
+
+        &__3 {
+          width: 300px;
+        }
+
+        &__4 {
+          width: 115px;
+        }
+      }
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      &Item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #9c99ae;
+
+        td {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+          text-align: left;
+        }
+
+        &__1 {
+          width: 250px;
+        }
+
+        &__2 {
+          width: 374px;
+        }
+
+        &__3 {
+          width: 300px;
+          color: #01c5ba !important;
+          font-weight: 700 !important;
+          cursor: pointer;
+        }
+
+        &__4 {
+          width: 115px;
+          color: #01c5ba !important;
+          font-weight: 700 !important;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

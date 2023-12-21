@@ -8,6 +8,7 @@ import { Settings } from './pages/Settings';
 import { ProductCard } from './pages/ProductCard';
 import { PersonalAccount } from './pages/PersonalAccount';
 import { Support } from './pages/Support';
+import { ActiveSlots } from './pages/ActiveSlots';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="support" element={<Support />} />
         <Route path="products/id" element={<ProductCard />} />
         <Route path="lk" element={<PersonalAccount />} />
+        <Route path="slots" element={<ActiveSlots />} />
       </Route>
     </Routes>
   );

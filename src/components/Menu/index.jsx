@@ -25,7 +25,7 @@ export const Menu = ({
           <ul className={styles.menuBlock__nav}>
             <li className={styles.menuBlock__navItem}>
               <NavLink
-                to="/orders"
+                to="/"
                 className={setActive}
                 onClick={() => {
                   setMenuOpen(false);
@@ -46,7 +46,7 @@ export const Menu = ({
                     stroke-linejoin="round"
                   />
                 </svg>
-                <p>Заказы</p>
+                <p>Главная</p>
               </NavLink>
             </li>
             <li className={styles.menuBlock__navItem}>
