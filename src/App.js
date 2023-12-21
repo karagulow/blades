@@ -9,6 +9,7 @@ import { ProductCard } from './pages/ProductCard';
 import { PersonalAccount } from './pages/PersonalAccount';
 import { Support } from './pages/Support';
 import { ActiveSlots } from './pages/ActiveSlots';
+import { IndividualOrder } from './pages/IndividualOrder';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="products/id" element={<ProductCard />} />
         <Route path="lk" element={<PersonalAccount />} />
         <Route path="slots" element={<ActiveSlots />} />
+        <Route path="individual_order" element={<IndividualOrder />} />
       </Route>
     </Routes>
   );
