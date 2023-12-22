@@ -8,10 +8,20 @@ export const ProductItem = ({ index, image, price, url, isFav = false }) => {
 
   return (
     <li key={index} className={styles.item}>
-      <Link to={url}>
+      <Link
+        to={url}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         <img className={styles.itemImg} src={image} alt="item" />
       </Link>
-      <Link to={url}>
+      <Link
+        to={url}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         <p className={styles.itemPrice}>{price} ₽</p>
       </Link>
       <div className={styles.itemFav}>

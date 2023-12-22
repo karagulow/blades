@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import styles from './PersonalAccount.module.scss';
 import historyData from '../../assets/data/order_history.json';
@@ -218,15 +218,33 @@ export const PersonalAccount = () => {
           </div>
 
           <div className={styles.accountMain__dataBtns}>
-            <button className={styles.accountMain__dataBtns__item}>
+            <Link
+              to="/individual_order"
+              className={styles.accountMain__dataBtns__item}
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
               Индивидуальный заказ
-            </button>
-            <button className={styles.accountMain__dataBtns__item}>
+            </Link>
+            <Link
+              to="/add_product"
+              className={styles.accountMain__dataBtns__item}
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
               Выставить на продажу
-            </button>
-            <button className={styles.accountMain__dataBtns__item}>
+            </Link>
+            <Link
+              to="/slots"
+              className={styles.accountMain__dataBtns__item}
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
               Активные слоты
-            </button>
+            </Link>
           </div>
         </div>
         <div className={styles.accountMain__history}>

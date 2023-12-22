@@ -36,7 +36,13 @@ export const Menu = ({
       <div className={styles.menuBlock} ref={menuBlockRef}>
         {isAuth ? (
           <>
-            <Link to="/lk" className={styles.menuBlock__user}>
+            <Link
+              to="/lk"
+              className={styles.menuBlock__user}
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
               <p className={styles.menuBlock__userName}>
                 Барилов Александр Сергеевич
               </p>
@@ -51,6 +57,7 @@ export const Menu = ({
                   className={setActive}
                   onClick={() => {
                     setMenuOpen(false);
+                    window.scrollTo(0, 0);
                   }}
                 >
                   <svg
@@ -77,6 +84,7 @@ export const Menu = ({
                   className={setActive}
                   onClick={() => {
                     setMenuOpen(false);
+                    window.scrollTo(0, 0);
                   }}
                 >
                   <svg
@@ -103,6 +111,7 @@ export const Menu = ({
                   className={setActive}
                   onClick={() => {
                     setMenuOpen(false);
+                    window.scrollTo(0, 0);
                   }}
                 >
                   <svg
@@ -126,6 +135,7 @@ export const Menu = ({
                   className={setActive}
                   onClick={() => {
                     setMenuOpen(false);
+                    window.scrollTo(0, 0);
                   }}
                 >
                   <svg

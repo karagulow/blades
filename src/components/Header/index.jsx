@@ -180,7 +180,12 @@ export const Header = () => {
               </div>
               {isAuth ? (
                 <div className={styles.headerRight__user}>
-                  <Link className={styles.headerRight__userLink}>
+                  <Link
+                    className={styles.headerRight__userLink}
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                    }}
+                  >
                     <svg
                       width="38"
                       height="38"
@@ -197,7 +202,13 @@ export const Header = () => {
                       />
                     </svg>
                   </Link>
-                  <Link to="/lk" className={styles.headerRight__userLink}>
+                  <Link
+                    to="/lk"
+                    className={styles.headerRight__userLink}
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                    }}
+                  >
                     <svg
                       width="33"
                       height="34"
