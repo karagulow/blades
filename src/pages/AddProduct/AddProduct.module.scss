@@ -1,0 +1,103 @@
+@import '../../assets/scss/main.scss';
+
+.add_product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &Back {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    cursor: pointer;
+
+    &__text {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &Title {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  &Block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-bottom: 50px;
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      column-gap: 50px;
+
+      &Text {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        width: 274px;
+      }
+
+      &Input {
+        border-radius: 2px;
+        border: 1px solid #393556;
+        width: 460px;
+        padding: 12px 16px 8px;
+
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      &Big_textarea {
+        border-radius: 2px;
+        border: 1px solid #393556;
+        width: 460px;
+        height: 156px;
+        max-height: 300px;
+        padding: 12px 16px;
+        resize: none;
+
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+      }
+    }
+  }
+
+  &Btn {
+    margin: 0 auto;
+    border-radius: 2px;
+    background: #01c5ba;
+    width: 360px;
+    padding: 10px 20px;
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

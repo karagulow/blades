@@ -11,6 +11,7 @@ import { Support } from './pages/Support';
 import { ActiveSlots } from './pages/ActiveSlots';
 import { IndividualOrder } from './pages/IndividualOrder';
 import { Favorites } from './pages/Favorites';
+import { AddProduct } from './pages/AddProduct';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="slots" element={<ActiveSlots />} />
         <Route path="individual_order" element={<IndividualOrder />} />
         <Route path="favorites" element={<Favorites />} />
+        <Route path="add_product" element={<AddProduct />} />
       </Route>
     </Routes>
   );
