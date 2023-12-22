@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Пластиковая оснастка для литья",
+    "price": 2100,
+    "image": "img/product-1.png",
+    "url": "/products/id"
+  },
+  {
+    "id": 2,
+    "name": "Пластиковая оснастка для литья",
+    "price": 2400,
+    "image": "img/product-2.png",
+    "url": "/products/id"
+  },
+  {
+    "id": 3,
+    "name": "Пластиковая оснастка для литья",
+    "price": 2100,
+    "image": "img/product-1.png",
+    "url": "/products/id"
+  },
+  {
+    "id": 4,
+    "name": "Пластиковая оснастка для литья",
+    "price": 2400,
+    "image": "img/product-2.png",
+    "url": "/products/id"
+  }
+]
