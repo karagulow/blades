@@ -45,6 +45,32 @@ export const AddProduct = () => {
       <form>
         <div className={styles.add_productBlock}>
           <div className={styles.add_productBlock__item}>
+            <p className={styles.add_productBlock__itemText}>
+              Добавить фотографии
+            </p>
+            <div className={styles.add_productBlock__itemPhotos}>
+              {/* ul list photos */}
+              <label className={styles.add_productBlock__itemPhotos__add}>
+                <input type="file" hidden />
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 6.30859V14.3086M14 10.3086H6M10 19.3086C14.9706 19.3086 19 15.2792 19 10.3086C19 5.33803 14.9706 1.30859 10 1.30859C5.02944 1.30859 1 5.33803 1 10.3086C1 15.2792 5.02944 19.3086 10 19.3086Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </label>
+            </div>
+          </div>
+          <div className={styles.add_productBlock__item}>
             <p className={styles.add_productBlock__itemText}>Название товара</p>
             <input className={styles.add_productBlock__itemInput} type="text" />
           </div>
