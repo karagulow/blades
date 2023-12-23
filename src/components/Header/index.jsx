@@ -181,6 +181,7 @@ export const Header = () => {
               {isAuth ? (
                 <div className={styles.headerRight__user}>
                   <Link
+                    to="/cart"
                     className={styles.headerRight__userLink}
                     onClick={() => {
                       window.scrollTo(0, 0);
